@@ -1,0 +1,315 @@
+<!doctype html>
+    <!-- CDF and AWS Questions -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Single Page Progessive Template</title>
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <!-- Comments -->
+        <style>
+
+            main > * {
+                display: none;
+            }
+
+            main > *:last-child {
+            display: block;
+            }
+
+            @keyframes pulse {
+                0% { transform: scale(1) }
+                50% { transform: scale(1.05) }
+                100% { transform: scale(1) }
+            }
+
+            main > *:target {
+                display: block;
+                animation: pulse 0.5s linear 1;
+            }
+
+            main > *:target ~ * {
+                display: none;
+            }
+
+            details {color: blue;}
+            details span {background-color: yellow;}
+            td {
+                border: 1px solid black;
+            }
+
+            th, td {
+                padding:  5px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div>
+
+            <nav role="navigation" style="overflow-x:auto;">
+                <table>
+                    <tr>
+                        <td><a href="#aws-cdf-study-guide">AWS-CDF</a></td>
+                        <td><a href="#Question 1:">Question 1:</a></td>
+                        <td><a href="#Question 2:">Question 2:</a></td>
+                        <td><a href="#Question 3:">Question 3:</a></td>
+                        <td><a href="#Question 4:">Question 4:</a></td>
+                        <td><a href="#Question 5:">Question 5:</a></td>
+                        <td><a href="#Question 6:">Question 6:</a></td>
+                        <td><a href="#Question 7:">Question 7:</a></td>
+                        <td><a href="#Question 8:">Question 8:</a></td>
+                        <td><a href="#Question 9:">Question 9:</a></td>
+                        <td><a href="#Question 10:">Question 10:</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Question 11:">Question 11:</a></td>
+                        <td><a href="#Question 12:">Question 12:</a></td>
+                        <td><a href="#Question 13:">Question 13:</a></td>
+                        <td><a href="#Question 14:">Question 14:</a></td>
+                        <td><a href="#Question 15:">Question 15:</a></td>
+                        <td><a href="#Question 16:">Question 16:</a></td>
+                        <td><a href="#Question 17:">Question 17:</a></td>
+                        <td><a href="#Question 18:">Question 18:</a></td>
+                        <td><a href="#Question 19:">Question 19:</a></td>
+                        <td><a href="#Question 20:">Question 20:</a></td>
+                    </tr>
+                </table>
+            </nav>
+        </div>
+
+        <h1 style="color:blue;text-align:left;">AWS and CDF Study Guide</h1>
+
+            <main role="main">
+            <!--/* AWS and CDF questions go here */-->
+
+                <div id="Question 10:">
+                    <h1>Question 10</h1>
+                        <!-- the static view content, enhanceable with JavaScript -->
+                        <p title="Question10">Question 10: When replicating Data Sharing Agreements(DSA's) in DSA Replication Prime NiFi Flow, which of the following is true? (select 3) </p>
+                        <ol>
+                            <li> Both the Prime and Failover clusters execute a cron job under svc_pmt to store the DSA's in their local HDFS system</li>
+                            <li>Both the Prime and Backup clusters execute a cron job under svc_policy to store the DSA's in their local HDFS system</li>
+                            <li>A node cron job from the Prime cluster to Failover cluster via Policy Management Tool (PMT) is created</li>
+                            <li>A node cron job from the Backup clusters via PMT is created </li>
+                            <li>NiFi is used on the Failover cluster to overwrite its local PMT DSA and ARC directories</li>
+                            <li>NiFi is used on the Backup cluster to duplicate its local PMT DSA and ARC directories</li>
+                        </ol>
+                            </br>
+                        <details><summary>Question 10 Answer</summary><span>1, 3 and 5 are the correect answers (p. 85 Data Ingest Guide)</span></details>
+
+                </div>
+
+                
+                <div id="Question 11:">
+                    <h1>Question 11</h1>
+
+                        <p title="Question11">Question 11: The Cron job associated with a DSA Replication Prime NiFi Flow is ... (select all that are true)</p>
+                        <ol>
+                            <li>Required on the PMT node of each cluster.</li>
+                            <li>Will run every weekday at 9 and 3 pm.</li>
+                            <li>Will run every weekday at 9 pm and 3 am</li>
+                            <li>Has 2 parts 1) Creating the Ticket Granting Ticket (TGT) and Executing the HDFS command to add the DSA's</li>
+                            <li>Has 3 parts; Granting the Master Ticktet (MT), executing the Kafka flow for each DSA, and Creating a backup DSA Flow</li>
+                            <li>A Kerberos Keytab is required so that the "kinit" as the service payment user will NOT be prompted for a password. </li>
+                        </ol>
+                            </br>
+                        <details><summary>Question 11 Answers</summary><span>Answers are 1,2,4 and 6. See page 85 under 'Cron job" in the Data Ingest Guide for an explanation</span></details>
+
+                </div>
+
+                <div id="Question 12:">
+                    <h1>Question 12</h1>
+  
+                        <p title="Question12">Question Number: Question Content. </p>
+                        <ol>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                        </ol>
+                            </br>
+                        <details><summary>Question 12 Answer - text in 'summary' tag renders </summary><span>Answers go here</span></details>
+
+                </div>
+
+                                </div>
+
+                <div id="Question 13:">
+                    <h1>Question 13</h1>
+  
+                        <p title="Question13">Question Number: Question Content. </p>
+                        <ol>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                        </ol>
+                            </br>
+                        <details><summary>Question 13 Answer - text in 'summary' tag renders </summary><span>Answers go here</span></details>
+
+                </div>
+
+                    <div id="Question 14:">
+                    <h1>Question 14</h1>
+  
+                        <p title="Question14">Question Number: Question Content. </p>
+                        <ol>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                        </ol>
+                            </br>
+                        <details><summary>Question 14 Answer - text in 'summary' tag renders </summary><span>Answers go here</span></details>
+
+                </div>
+
+                    <div id="Question 15:">
+                    <h1>Question 15</h1>
+  
+                        <p title="Question15">Question Number: Question Content. </p>
+                        <ol>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                        </ol>
+                            </br>
+                        <details><summary>Question 15 Answer - text in 'summary' tag renders </summary><span>Answers go here</span></details>
+
+                </div>
+
+                <div id="Question 16:">
+                    <h1>Question 16</h1>
+  
+                        <p title="Question16">Question Number: Question Content. </p>
+                        <ol>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                        </ol>
+                            </br>
+                        <details><summary>Question 16 Answer - text in 'summary' tag renders </summary><span>Answers go here</span></details>
+
+                </div>
+
+                <div id="Question 17:">
+                    <h1>Question 17</h1>
+  
+                        <p title="Question17">Question Number: Question Content. </p>
+                        <ol>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                        </ol>
+                            </br>
+                        <details><summary>Question 17 Answer - text in 'summary' tag renders </summary><span>Answers go here</span></details>
+
+                </div>
+
+                <div id="Question 18:">
+                    <h1>Question 18</h1>
+  
+                        <p title="Question18">Question Number: Question Content. </p>
+                        <ol>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                        </ol>
+                            </br>
+                        <details><summary>Question 18 Answer - text in 'summary' tag renders </summary><span>Answers go here</span></details>
+
+                </div>
+
+                                <div id="Question 19:">
+                    <h1>Question 19</h1>
+  
+                        <p title="Question19">Question Number: Question Content. </p>
+                        <ol>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                        </ol>
+                            </br>
+                        <details><summary>Question 19 Answer - text in 'summary' tag renders </summary><span>Answers go here</span></details>
+
+                </div>
+
+                <div id="Question 20:">
+                    <h1>Question 20</h1>
+  
+                        <p title="Question20">Question Number: Question Content. </p>
+                        <ol>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                        </ol>
+                            </br>
+                        <details><summary>Question 20 Answer - text in 'summary' tag renders </summary><span>Answers go here</span></details>
+
+                </div>
+
+                <!-- template code for questions -->
+                <!--<div id="Question Number:">
+                    <h1>Question Number</h1>
+                        /* the static view content, enhanceable with JavaScript*/
+                        <p title="question##">Question Number: Question Content. </p>
+                        <ol>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                            <li>Question Selection</li>
+                        </ol>
+                            </br>
+                        <details><summary>Question Number Answer - text in 'summary' tag renders </summary><span>Answers go here</span></details>
+
+                </div> -->
+
+
+                <div id="aws-cdf-study-guide">
+                <h1>AWS and CDF Study Guide</h1>
+                <p>These questions cover AWS and CDF Ingest Guide v1.1, CDF Help Desk Process Guide and CDF Platform Management Guide.</p>
+                <!--the static view content, reachable by hash identifier. It is enchanceable by javascript but we don't need it here-->
+                </div>
+
+            </main>
+
+
+
+    </body>
+
+            <!--<script id="rendered-js" >
+                /* sure, whatever */
+            </script>-->
+
+</html>
